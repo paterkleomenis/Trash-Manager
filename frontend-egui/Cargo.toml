@@ -1,0 +1,15 @@
+[package]
+name = "frontend-egui"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "egui-based frontend for Trash Manager process management"
+license = "MIT"
+readme = "../README.md"
+
+[dependencies]
+eframe = "0.27"
+egui = "0.27"
+egui_extras = { version = "0.27", features = ["default"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+backend = { path = "../backend" }

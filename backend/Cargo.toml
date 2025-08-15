@@ -1,0 +1,18 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "UI-agnostic process management library for Linux"
+license = "MIT"
+repository = "https://github.com/yourusername/trash-manager"
+
+[lib]
+name = "backend"
+path = "src/lib.rs"
+crate-type = ["lib"]
+
+[dependencies]
+nix = { version = "0.29", features = ["signal"] }
+procfs = "0.16"
+thiserror = "1.0"
